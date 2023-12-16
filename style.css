@@ -1,0 +1,419 @@
+:root {
+  --pc: #007DFF;
+  --bg: #007DFF;
+  --h2-color1: #007DFF;
+  --h2-color2: #ffffff;
+  --text-1: #ffffff;
+  --text-2: #007DFF;
+  --btn-color-1: #FFFFFF;
+  --btn-text-color-1: #007DFF;
+  --btn-color-2: #007DFF;
+  --btn-text-color-2: #FFFFFF;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins/Poppins-Regular.ttf");
+}
+* {
+  text-align: center;
+  text-decoration: none !important;
+  list-style: none;
+  list-style-type: none;
+  font-family: "Poppins";
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+.p-color {
+  color: var(--pc);
+}
+
+header img {
+  width: 15%;
+  min-width: 150px;
+}
+#main {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0% 1% 1% 1%;
+}
+#main .card{
+  background-color: var(--text-1);
+  height: 60%;
+  border-radius: 34px;
+}
+.main-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.gradient {
+  height: 10vh;
+}
+
+h1 {
+  font-size: 6.7em;
+  font-weight: 700;
+}
+.primary{
+  color: var(--text-1);
+}
+.secondary{
+  color: var(--text-2);
+}
+.header span {
+  font-weight: 700;
+}
+h2 {
+  font-size: 12.8em;
+  font-weight: 900;
+}
+h3 {
+  font-size: 9.6em;
+  font-weight: 800;
+}
+h4 {
+  font-size: 3.4em;
+  font-weight: 500;
+}
+p {
+  font-size: 2.4em;
+  width: 100%;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 88.5%;
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+
+.col {
+  width: 50%;
+  overflow: hidden;
+}
+.img-fluid {
+  width: 100%;
+}
+section {
+  position: relative;
+}
+
+.btn-join {
+  font-weight: 700;
+}
+.btn-join a {
+  width: 70%;
+  max-width: 668px;
+  margin: 0 auto;
+  height: 11em;
+  min-height: fit-content;
+  border-radius: 1.2em;
+  margin-bottom: 3em;
+  padding: 0em 5em;
+  transition: 0.5s;
+}
+.btn-join a:hover {
+  transform: scale(1.1);
+}
+
+.btn-join.b1 a{
+  background-color: var(--btn-color-1);
+}
+
+.btn-join.b1 a p {
+  color: var(--btn-text-color-1);
+  width: 70%;
+}
+
+.btn-join.b2 a{
+  background-color: var(--btn-color-2);
+}
+
+.btn-join.b2 a p {
+  color: var(--btn-text-color-2);
+  width: 70%;
+}
+.btn-join.b1 i {
+  color: var(--text-2);
+  font-size: 8em;
+}
+.btn-join.b2 i {
+  color: var(--text-1);
+  font-size: 8em;
+}
+
+
+.black {
+  width: 100%;
+  margin: 0 auto;
+}
+.header{
+  margin-bottom: 5vh;
+}
+
+#main .header {
+  margin-bottom: 1em;
+}
+#main .content {
+  height: 65vh;
+}
+#main .content img {
+  transform: translateX(10px);
+  width: 100%;
+  object-fit: contain;
+}
+#joinUs .content {
+  padding: 0 11vw 5vh 5vw;
+  gap: 20px;
+}
+#joinUs{
+
+  background-image: url("imgs/bg-image.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10%;
+  color: var(--text-2);
+}
+
+.slider {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  margin: 0 auto;
+}
+.slider video {
+  width: 100%;
+}
+.text {
+    width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#depoiments .text{
+    width: 100%;
+    font-size: 4em;
+    margin-bottom: 50px;
+    line-height: 100%;
+}
+#depoiments .join{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  margin-top: 3%;
+
+  flex-direction: column;
+  justify-content: space-around;
+}
+#depoiments .btn-join{
+  margin-top: 8vh;
+}
+#depoiments .row{
+  padding: 5%;
+}
+#depoiments .col{
+  height: 100%;
+}
+#depoiments .row{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.text .btn-join {
+  margin-top: 8vh;
+}
+.text p {
+  line-height: normal;
+}
+
+.screenshots{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobile{
+  width: 100%;
+  max-width: 373px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.premios{
+  width: 100%;
+  height: fit-content;
+  padding-top: 15px;
+  border-radius: 10px;
+}
+.premios img{
+  width: 100%;
+  object-fit: fill;
+  border-radius: 30px;
+}
+.celular{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#depoiments .video{
+  width: 30%;
+}
+#depoiments .video video{
+  width: 100%;
+}
+.mobileV{
+  display: none;
+}
+body,
+main {
+  background-color: var(--bg);
+}
+body {
+  font-size: 62.5%;
+}
+@media (max-width: 1440px) {
+  body {
+    font-size: 55%;
+  }
+}
+@media (max-width: 768px) {
+  .row {
+    flex-wrap: wrap-reverse;
+  }
+  #main .content {
+    height: auto;
+    padding-bottom: 5vh;
+  }
+  #main .content img {
+    transform: translateX(0em);
+  }
+  .col {
+    width: 100%;
+  }
+  body {
+    font-size: 50%;
+  }
+  #main .main-img{
+    width: 70%;
+  }
+  #joinUs .content {
+    padding: 0 2px 20px;
+  }
+  #joinUs .row {
+    flex-wrap: wrap;
+  }
+  #joinUs .textC {
+    padding: 0 5%;
+    font-size: 2.4em;
+  }
+  #depoiments .row{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  #depoiments .col{
+    width: 100%;
+  }
+  .text .btn-join {
+    margin-top: 3vh;
+  }
+  h1{
+    font-size: 8em;
+  }
+  h2 {
+    font-size: 12em;
+    font-weight: 900;
+  }
+  h3 {
+    font-size: 8.5em;
+    font-weight: 800;
+  }
+}
+
+@media (max-width: 660px) {
+  h1{
+    font-size: 6em;
+  }
+  h2 {
+    font-size: 8em;
+    font-weight: 900;
+  }
+  #main .content img {
+    transform: translateX(0em);
+  }
+}
+@media (max-width: 460px) {
+  .slider {
+    width: 35em;
+  }
+  h2 {
+    font-size: 12em;
+    font-weight: 900;
+  }
+  h3 {
+    font-size: 8.5em;
+    font-weight: 800;
+  }
+  p {
+    font-size: 1.8em;
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  h1 {
+    font-size: 5.5em;
+  }
+  h2 {
+    font-size: 7em;
+  }
+  .main-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 375px) {
+  h3 {
+    font-size: 8.2em;
+    font-weight: 800;
+  }
+}
+@media (max-width: 337px) {
+  #main .content img {
+    height: 25vh;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    font-size: 40%;
+  }
+  .slider {
+    width: 90%;
+  }
+  .slider video {
+    width: 100%;
+    min-width: 0;
+  }
+}
