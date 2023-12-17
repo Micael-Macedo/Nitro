@@ -37,11 +37,28 @@ header img {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0% 1% 1% 1%;
+  z-index: 5;
+}
+#main .text{
+  position: relative;
+  right: 50px;
 }
 #main .card{
+  padding: 2rem 1.5rem;
   background-color: var(--text-1);
-  height: 60%;
-  border-radius: 34px;
+  color: var(--text-2);
+  border-radius: 0px 34px 34px 0;
+  padding-bottom: 100px;
+}
+#main .card h3{
+  font-size: 2rem;
+}
+#main .card h4{
+  font-size: 2rem;
+  font-weight: 900;
+}
+#main .card p{
+  font-size: 1rem;
 }
 .main-img {
   display: flex;
@@ -55,6 +72,7 @@ header img {
 }
 
 h1 {
+  width: 75%;
   font-size: 6.7em;
   font-weight: 700;
 }
@@ -91,6 +109,12 @@ p {
   padding: 0 !important;
   line-height: 88.5%;
 }
+
+.count{
+  font-size: 3rem;
+  color: var(--h2-color2);
+}
+
 .d-flex {
   display: flex;
 }
@@ -124,7 +148,7 @@ section {
   margin: 0 auto;
   height: 11em;
   min-height: fit-content;
-  border-radius: 1.2em;
+  border-radius: 25px;
   margin-bottom: 3em;
   padding: 0em 5em;
   transition: 0.5s;
@@ -172,6 +196,7 @@ section {
   margin-bottom: 1em;
 }
 #main .content {
+  align-items: end;
   height: 65vh;
 }
 #main .content img {
@@ -180,7 +205,6 @@ section {
   object-fit: contain;
 }
 #joinUs .content {
-  padding: 0 11vw 5vh 5vw;
   gap: 20px;
 }
 #joinUs{
@@ -209,7 +233,15 @@ section {
   justify-content: center;
   flex-direction: column;
 }
-
+#depoiments h2{
+  color: var(--h2-color2);
+}
+#depoiments .text{
+  color: var(--h2-color2);
+}
+#depoiments .textC{
+  font-weight: 500;
+}
 #depoiments .text{
     width: 100%;
     font-size: 4em;
@@ -313,11 +345,11 @@ body {
   .col {
     width: 100%;
   }
-  body {
-    font-size: 50%;
-  }
   #main .main-img{
     width: 70%;
+  }
+  body {
+    font-size: 50%;
   }
   #joinUs .content {
     padding: 0 2px 20px;
