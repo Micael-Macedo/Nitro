@@ -17,4 +17,4 @@ jobs:
         user: ${{ secrets.USER }}
         password: ${{ secrets.PASS }}
         localDir: "dist"
-        server-dir: public_html/
+        server-dir: public_html/file
