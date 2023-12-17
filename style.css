@@ -10,12 +10,6 @@
   --btn-color-2: #007DFF;
   --btn-text-color-2: #FFFFFF;
 }
-
-h2{
-  font-size: 6rem;
-  text-align: center;
-  font-weight: 900;
-}
 @font-face {
   font-family: "Poppins";
   src: url("Poppins/Poppins-Regular.ttf");
@@ -97,15 +91,16 @@ h1{
   font-size: 3rem;
 }
 
+h2{
+  font-size: 6rem;
+  text-align: center;
+  font-weight: 900;
+}
+
 header img{
   width: 20%;
   min-width: 300px;
 }
-#main .content{
-  position: relative;
-  display: flex;
-}
-
 #main .join{
   width: 80%;
 }
@@ -120,8 +115,7 @@ header img{
   align-items: center;
   position: relative;
   bottom: 150px;
-  gap: 150px;
-  bottom: 20vh;
+  gap: 5%;
 }
 #main .content h2{
   color: var(--text-1);
@@ -145,9 +139,10 @@ header img{
   z-index: 3;
 }
 #main .card{
+  min-width: 150px;
   background-color: var(--btn-text-color-2);
   color: var(--text-2);
-  padding: 30px 20px 120px;
+  padding: 30px 20px 10vh;
   border-radius: 0px 20px 0px;
 }
 #main .card h3{
@@ -176,6 +171,7 @@ header img{
 }
 #howWorks .video video{
   width: 100%;
+  max-width: 400px;
 }
 #howWorks .content{
   display: flex;
@@ -231,9 +227,49 @@ header img{
   width: 65%;
 }
 
-@media (max-width: 1100px) {
-  .content{
-    flex-direction: column;
+@media (max-width: 1450px) {
+  html{
+    font-size: 80%;
+  }
+  #main .text{
+    position: relative;
+    top: -200px;
+  }
+  #main .product img{
+    width: 70%;
+  }
+  #howWorks .video{
+    width: 150%;
   }
 }
+@media (max-width: 1024px) {
+  #main .product img{
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
 
+  h2{
+    font-size: 4rem;
+  }
+  #main{
+    height: fit-content;
+  }
+  #main .content{
+    padding-top: 5vh;
+    justify-content: center;
+  }
+  #howWorks{
+    padding: 25vh 5%;
+  }
+  #howWorks .video{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+  .content{
+    flex-wrap: wrap;
+  }
+}
