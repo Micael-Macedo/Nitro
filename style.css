@@ -1,18 +1,14 @@
 :root {
-  --pc: #007DFF;
-  --bg: #007DFF;
-  --h2-color1: #007DFF;
+  --pc: #007dff;
+  --bg: #007dff;
+  --h2-color1: #007dff;
   --h2-color2: #ffffff;
   --text-1: #ffffff;
-  --text-2: #007DFF;
-  --btn-color-1: #FFFFFF;
-  --btn-text-color-1: #007DFF;
-  --btn-color-2: #007DFF;
-  --btn-text-color-2: #FFFFFF;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("Poppins/Poppins-Regular.ttf");
+  --text-2: #007dff;
+  --btn-color-1: #ffffff;
+  --btn-text-color-1: #007dff;
+  --btn-color-2: #007dff;
+  --btn-text-color-2: #ffffff;
 }
 
 * {
@@ -20,12 +16,14 @@
   text-decoration: none !important;
   list-style: none;
   list-style-type: none;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
 
-.btn-join{
+.btn-join {
+  width: fit-content;
+  height: fit-content;
   padding: 0 5%;
   display: flex;
   align-items: center;
@@ -34,14 +32,14 @@
   gap: 20px;
 }
 
-.btn-join i{
+.btn-join i {
   font-size: 4rem;
 }
-.btn-join p{
+.btn-join p {
   font-size: 2rem;
   font-weight: 900;
 }
-.btn-join a{
+.btn-join a {
   display: flex;
   border-radius: 34px;
   align-items: center;
@@ -49,258 +47,337 @@
   gap: 15px;
   width: 90%;
   padding: 1% 3%;
-  transition: .5s;
+  transition: 0.5s;
 }
-.btn-join a:hover{
+.btn-join a:hover {
   transform: scale(1.2);
 }
 
-.btn-join.b1 a{
+.btn-join.b1 a {
   background-color: var(--btn-color-1);
 }
-.btn-join.b1 p, i{
+.btn-join.b1 p,
+i {
   color: var(--btn-text-color-1);
 }
-.btn-join.b1 i{
+.btn-join.b1 i {
   color: var(--btn-color-2);
 }
-.btn-join.b2 a{
+.btn-join.b2 a {
   background-color: var(--btn-color-2);
 }
-.btn-join.b2 p, i{
+.btn-join.b2 p,
+i {
   color: var(--btn-text-color-2);
 }
-.btn-join.b2 .join{
+.btn-join.b2 .join {
   color: var(--text-2);
-} 
+}
 
-.h2p{
+.h2p {
   color: var(--h2-color1);
 }
-.h2s{
+.h2s {
   color: var(--h2-color2);
 }
 
-body{
+body {
   background-color: var(--bg);
 }
 
-h1{
+h1 {
   color: var(--text-1);
   font-size: 3rem;
 }
 
-h2{
+h2 {
   font-size: 6rem;
   text-align: center;
   font-weight: 900;
 }
 
-header img{
-  width: 20%;
-  min-width: 300px;
-}
-#main .join{
-  width: 80%;
-}
 
-#main{
-  padding: 2% 5% 5%;
-  height: 80vh;
-
+#main {
+  position: relative;
+  height: 85vh;
+  padding: 20vh 5% 0vh;
 }
-#main .content{
+header{
+  width: 90%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 5%;
+}
+header img {
+  min-width: 200px;
+  width: 20%;
+}
+#depoiments .join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  bottom: 150px;
   gap: 5%;
 }
-#main .content h2{
+#main .content h2 {
   color: var(--text-1);
 }
-#main .content .product{
+
+#main .content .product {
   width: 100%;
   display: flex;
   align-items: end;
   justify-content: end;
 }
-#main .content .product img{
+#main .content .product img {
   z-index: 5;
 }
-#main .count{
+#main .count {
   font-size: 3rem;
 }
-#main .content .text{
+#main .content .text {
   position: relative;
-  right: 60px;
-  bottom: 300px;
+  right: 8%;
   z-index: 3;
+  margin-bottom: 7vh;
 }
-#main .card{
+#main .card {
   min-width: 150px;
+  max-width: 220px;
   background-color: var(--btn-text-color-2);
   color: var(--text-2);
-  padding: 30px 20px 10vh;
-  border-radius: 0px 20px 0px;
+  padding: 30px 20px 120px;
+  border-radius: 0px 20px 20px 20px;
 }
-#main .card h3{
+#main .card h3 {
   margin-bottom: 15px;
   font-size: 1.8rem;
 }
-#main .card h4{
+#main .card h4 {
   font-size: 1.5rem;
   margin-bottom: 15px;
 }
-#main .card p{
+#main .card p {
   font-size: 0.8rem;
   font-weight: 700;
-  
 }
 
-
-#howWorks{
+#howWorks {
   background-image: url("imgs/bg-image.png");
   background-size: 100% 100%;
   color: var(--text-2);
   padding: 10% 5% 10%;
 }
-#howWorks .video{
+#howWorks .video {
   width: 130%;
 }
-#howWorks .video video{
+#howWorks .video video {
   width: 100%;
   max-width: 400px;
 }
-#howWorks .content{
+#howWorks .content {
   display: flex;
   gap: 5%;
 }
-#howWorks .text{
+#howWorks .text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 5%;
 }
-#howWorks p{
+#howWorks p {
   font-size: 1.5rem;
 }
-#depoiments .content{
+#depoiments .content {
   display: flex;
   padding: 0 5% 5%;
   gap: 2.5%;
 }
-#depoiments .text{
+#depoiments .text {
   color: var(--text-1);
   font-size: 2.3rem;
 }
 
-#depoiments .video{
+#depoiments .video {
   width: 130%;
 }
-#depoiments video{
+#depoiments video {
   width: 100%;
 }
-
-.mobile{
+#depoiments .screenshots {
+  width: 100%;
+}
+.mobile {
   position: relative;
   overflow: hidden;
 }
-.mobile .premios{
+.mobile .premios {
   width: 100%;
   position: absolute;
 }
-.mobile .premios img{
+.mobile .premios img {
   width: 100%;
   position: relative;
   bottom: 10px;
   border-radius: 25px;
 }
-.mobile .celular{
+.mobile .celular {
   width: 100%;
   position: relative;
   z-index: 10;
 }
-.mobile-only{
+.mobile-only {
   display: none;
 }
 
-#depoiments .btn-join a{
+#depoiments .btn-join a {
+  margin: 0 auto;
   max-width: 676px;
 }
 
 @media (max-width: 1450px) {
-  html{
+  html {
     font-size: 80%;
-  }
-  #main .text{
-    position: relative;
-    top: -200px;
-  }
-  #main .product img{
-    width: 70%;
-  }
-  #howWorks .video{
-    width: 150%;
-  }
-}
-@media (max-width: 1024px) {
-  #main .product img{
-    width: 70%;
-  }
-}
-@media (max-width: 768px) {
-  .mobile-only{
-    display: flex;
-  }
-  .desktop{
-    display: none;
-  }
-  .btn-join{
-    padding: 0;
-  }
-  .btn-join a{
-    width: 100%;
-  }
-  h2{
-    font-size: 4rem;
   }
   #main{
     height: fit-content;
   }
+  #main .product img {
+    width: 70%;
+  }
+  #howWorks .video {
+    width: 150%;
+  }
+}
+@media (max-width: 1200px) {
+  #depoiments .video{
+    width: 130%;
+  }
+  #depoiments .screenshots{
+    width: 130%;
+  }
+}
+@media (max-width: 1024px) {
+  #main .product img {
+    width: 70%;
+  }
+  #depoiments .join {
+    width: 40%;
+  }
+  #depoiments .textJoin{
+    font-size: 2rem;
+  }
+  #depoiments .btn-join p{
+    font-size: 1rem;
+  }
+  #depoiments .video {
+    width: 30%;
+  }
+  #depoiments .screenshots{
+    width: 30%;
+  }
+
+}
+@media (max-width: 910px) {
+  #main{
+    height: fit-content;
+  }
   #main .content{
-    padding-top: 5vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  #main .product{
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100%;
+  }
+  #main .content img{
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  #main .product img{
+    width: 50%;
+  }
+  .mobile-only {
+    display: flex;
+  }
+  .desktop {
+    display: none;
+  }
+  .btn-join {
+    padding: 0;
+  }
+  .btn-join a {
+    width: 100%;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  #main {
+    height: fit-content;
+  }
+  #main .content {
     justify-content: center;
   }
 
-  #main .join{
+  #main .join {
     width: 100%;
   }
-  #howWorks{
+  #howWorks {
     background-size: cover;
     background-repeat: no-repeat;
-  }
-  #howWorks{
     padding: 25vh 5%;
   }
-  #howWorks .video{
+
+  #howWorks .video {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 5%;
   }
-  #depoiments .content{
+  #depoiments .content {
     justify-content: center;
+    gap: 5%;
   }
-  #depoiments .screenshots{
+  #depoiments .join{
+    width: 100%;
+  }
+  #depoiments .screenshots {
     width: 90%;
   }
-  #depoiments .video{
+  #depoiments .video {
     width: 90%;
   }
-  .content{
+  .content {
     flex-wrap: wrap;
   }
+}
+@media (max-width: 425px) {
+  .btn-join p{
+    font-size: 1rem !important;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  #main .product{
+    flex-wrap: wrap;
+  }
+  #main .text{
+    right: 0 !important;
+  }
+  #main .card{
+    padding-bottom: 10%;
+  }
+  
 }
