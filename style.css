@@ -218,9 +218,13 @@ header img {
 .mobile {
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: start;
+  justify-content: center;
 }
 .mobile .premios {
-  width: 100%;
+  margin: 20px auto;
+  width: 90%;
   position: absolute;
 }
 .mobile .premios img {
@@ -234,6 +238,7 @@ header img {
   position: relative;
   z-index: 10;
 }
+
 .mobile-only {
   display: none;
 }
